@@ -131,29 +131,6 @@ python tasks/task_synchronization_mechanisms/example5_executor.py
 - Python 3.6 или выше
 - Стандартная библиотека Python (все необходимые модули входят в стандартную поставку)
 
-## Запуск всех примеров
-
-Для запуска всех примеров последовательно:
-
-```bash
-# Windows PowerShell
-python tasks/task_synchronization_mechanisms/example1_mutex.py
-python tasks/task_synchronization_mechanisms/example2_semaphore.py
-python tasks/task_synchronization_mechanisms/example3_barrier.py
-python tasks/task_synchronization_mechanisms/example4_event.py
-python tasks/task_synchronization_mechanisms/example5_executor.py
-```
-
-Или в Linux/Mac:
-
-```bash
-# Linux/Mac
-python3 tasks/task_synchronization_mechanisms/example1_mutex.py
-python3 tasks/task_synchronization_mechanisms/example2_semaphore.py
-python3 tasks/task_synchronization_mechanisms/example3_barrier.py
-python3 tasks/task_synchronization_mechanisms/example4_event.py
-python3 tasks/task_synchronization_mechanisms/example5_executor.py
-```
 
 ## Когда использовать каждый механизм
 
@@ -176,21 +153,4 @@ python3 tasks/task_synchronization_mechanisms/example5_executor.py
 ### ThreadPoolExecutor (ExecutorService)
 - **Когда:** Нужно эффективно управлять множеством задач с использованием пула потоков
 - **Примеры:** Параллельная обработка данных, выполнение множества независимых задач, оптимизация использования ресурсов
-
-## Важные замечания
-
-1. **Все примеры самодостаточны** - каждый файл можно запускать независимо
-2. **Примеры содержат подробные комментарии** на русском языке
-3. **Демонстрируются как проблемы**, так и правильные решения
-4. **Используется `time.sleep()`** для имитации реальной работы и наглядности
-
-## Дополнительные ресурсы
-
-- [Документация Python threading](https://docs.python.org/3/library/threading.html)
-- [Документация concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html)
-- [Руководство по многопоточности в Python](https://docs.python.org/3/library/threading.html#threading-objects)
-
-## Автор
-
-Примеры созданы в рамках изучения механизмов синхронизации в многопоточном программировании.
 
